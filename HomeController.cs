@@ -15,7 +15,14 @@ namespace tutorial6ex2.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "This is the this is biweekly assesment 6 activity updated application description page.";
+            ViewBag.Message = "This is the updated version of the previous code.";
+
+            return View();
+
+        }
+        public ActionResult contact()
+        {
+            ViewBag.Message = "Your contact page.";
 
             return View();
         }
@@ -25,21 +32,16 @@ namespace tutorial6ex2.Controllers
 
             return View();
         }
-
-        public ActionResult Contact()
+        public string subject()
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-        public string subjects()
-        {
-            return "updated list of subjects enroilled by the students"
+            return "updated " +
+                "list of the subject that the students have choosen"
         }
         public string newsubject(string name)
         {
-            return "newsubject added: " + name;
+            return "new subject added is: " + name
         }
+        
 
     }
 }
