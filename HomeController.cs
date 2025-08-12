@@ -16,7 +16,7 @@ namespace tutorial6ex2.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "This my name application shubham description page.";
+            ViewBag.Message = "This my name application shubham don description page.";
 
             return View();
         }
