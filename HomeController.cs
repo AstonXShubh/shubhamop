@@ -15,11 +15,17 @@ namespace tutorial6ex2.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "This is the shubham updated application description page.";
+            ViewBag.Message = "This is the this is biweekly assemennt submission updated application description page.";
 
             return View();
         }
-       
+
+        public ActionResult servives()
+        {
+            ViewBag.Message = "Your servivce page.";
+
+            return View();
+        }
 
         public ActionResult Contact()
         {
